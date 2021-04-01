@@ -2,7 +2,6 @@ C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\T
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\Telethon2021.exe
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\Telethon2021.pdb
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.csprojAssemblyReference.cache
-C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.Form1.resources
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.Properties.Resources.resources
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.csproj.GenerateResource.cache
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.csproj.CoreCompileInputs.cache
@@ -12,3 +11,4 @@ C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\B
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\Bunifu.Core.dll
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.csproj.CopyComplete
+C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021\obj\Debug\Telethon2021.Login.resources
