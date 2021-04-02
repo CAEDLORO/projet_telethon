@@ -37,9 +37,9 @@ namespace Telethon2021V1
             this.btn_Donateur = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TopPanel = new System.Windows.Forms.Panel();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.ImageTitre = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.btn_exit = new System.Windows.Forms.Button();
             this.BannerAccueil = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +70,7 @@ namespace Telethon2021V1
             this.btn_accueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_accueil.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_accueil.ForeColor = System.Drawing.Color.White;
-            this.btn_accueil.Location = new System.Drawing.Point(12, 437);
+            this.btn_accueil.Location = new System.Drawing.Point(12, 250);
             this.btn_accueil.Name = "btn_accueil";
             this.btn_accueil.Size = new System.Drawing.Size(218, 44);
             this.btn_accueil.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace Telethon2021V1
             this.bn_affichage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bn_affichage.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bn_affichage.ForeColor = System.Drawing.Color.White;
-            this.bn_affichage.Location = new System.Drawing.Point(12, 374);
+            this.bn_affichage.Location = new System.Drawing.Point(12, 443);
             this.bn_affichage.Name = "bn_affichage";
             this.bn_affichage.Size = new System.Drawing.Size(218, 44);
             this.bn_affichage.TabIndex = 3;
@@ -98,7 +98,7 @@ namespace Telethon2021V1
             this.btn_commanditaire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_commanditaire.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_commanditaire.ForeColor = System.Drawing.Color.White;
-            this.btn_commanditaire.Location = new System.Drawing.Point(12, 309);
+            this.btn_commanditaire.Location = new System.Drawing.Point(12, 378);
             this.btn_commanditaire.Name = "btn_commanditaire";
             this.btn_commanditaire.Size = new System.Drawing.Size(218, 44);
             this.btn_commanditaire.TabIndex = 2;
@@ -112,7 +112,7 @@ namespace Telethon2021V1
             this.btn_Donateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Donateur.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Donateur.ForeColor = System.Drawing.Color.White;
-            this.btn_Donateur.Location = new System.Drawing.Point(12, 242);
+            this.btn_Donateur.Location = new System.Drawing.Point(12, 311);
             this.btn_Donateur.Name = "btn_Donateur";
             this.btn_Donateur.Size = new System.Drawing.Size(218, 44);
             this.btn_Donateur.TabIndex = 1;
@@ -142,6 +142,19 @@ namespace Telethon2021V1
             this.TopPanel.Size = new System.Drawing.Size(677, 106);
             this.TopPanel.TabIndex = 1;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_exit.Font = new System.Drawing.Font("ABeeZee", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Location = new System.Drawing.Point(645, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(27, 23);
+            this.btn_exit.TabIndex = 1;
+            this.btn_exit.Text = "X";
+            this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // ImageTitre
             // 
             this.ImageTitre.BackColor = System.Drawing.Color.Transparent;
@@ -162,25 +175,12 @@ namespace Telethon2021V1
             this.panelPrincipal.Size = new System.Drawing.Size(677, 450);
             this.panelPrincipal.TabIndex = 2;
             // 
-            // btn_exit
-            // 
-            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_exit.Font = new System.Drawing.Font("ABeeZee", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.Location = new System.Drawing.Point(645, 5);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(27, 23);
-            this.btn_exit.TabIndex = 1;
-            this.btn_exit.Text = "X";
-            this.btn_exit.UseVisualStyleBackColor = false;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
             // BannerAccueil
             // 
             this.BannerAccueil.Image = ((System.Drawing.Image)(resources.GetObject("BannerAccueil.Image")));
-            this.BannerAccueil.Location = new System.Drawing.Point(36, 320);
+            this.BannerAccueil.Location = new System.Drawing.Point(9, 354);
             this.BannerAccueil.Name = "BannerAccueil";
-            this.BannerAccueil.Size = new System.Drawing.Size(609, 87);
+            this.BannerAccueil.Size = new System.Drawing.Size(659, 87);
             this.BannerAccueil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BannerAccueil.TabIndex = 7;
             this.BannerAccueil.TabStop = false;
@@ -194,6 +194,7 @@ namespace Telethon2021V1
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
