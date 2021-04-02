@@ -23,5 +23,10 @@ namespace Telethon2021V1
              Accueil fenetre = new Accueil();
                 fenetre.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
