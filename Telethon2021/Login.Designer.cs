@@ -1,7 +1,7 @@
 ﻿
 namespace Telethon2021
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,19 +29,18 @@ namespace Telethon2021
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Annuler = new System.Windows.Forms.Button();
+            this.btn_Enter = new System.Windows.Forms.Button();
+            this.txt_Box_Pass = new System.Windows.Forms.TextBox();
+            this.txt_Box_User = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label_2021 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,32 +84,65 @@ namespace Telethon2021
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_Annuler);
+            this.panel1.Controls.Add(this.btn_Enter);
             this.panel1.Location = new System.Drawing.Point(12, 289);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(630, 69);
             this.panel1.TabIndex = 7;
             // 
-            // textBox2
+            // btn_Annuler
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(271, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(318, 34);
-            this.textBox2.TabIndex = 3;
+            this.btn_Annuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_Annuler.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_Annuler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Annuler.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Annuler.ForeColor = System.Drawing.Color.White;
+            this.btn_Annuler.Location = new System.Drawing.Point(368, 12);
+            this.btn_Annuler.Name = "btn_Annuler";
+            this.btn_Annuler.Size = new System.Drawing.Size(156, 44);
+            this.btn_Annuler.TabIndex = 1;
+            this.btn_Annuler.Text = "Annuler";
+            this.btn_Annuler.UseVisualStyleBackColor = true;
+            this.btn_Annuler.Click += new System.EventHandler(this.btn_Annuler_Click);
             // 
-            // textBox1
+            // btn_Enter
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(271, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 34);
-            this.textBox1.TabIndex = 2;
+            this.btn_Enter.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_Enter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Enter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Enter.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Enter.ForeColor = System.Drawing.Color.White;
+            this.btn_Enter.Location = new System.Drawing.Point(103, 11);
+            this.btn_Enter.Name = "btn_Enter";
+            this.btn_Enter.Size = new System.Drawing.Size(156, 44);
+            this.btn_Enter.TabIndex = 0;
+            this.btn_Enter.Text = "Entrer";
+            this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
+            // 
+            // txt_Box_Pass
+            // 
+            this.txt_Box_Pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Box_Pass.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txt_Box_Pass.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Box_Pass.Location = new System.Drawing.Point(271, 215);
+            this.txt_Box_Pass.Name = "txt_Box_Pass";
+            this.txt_Box_Pass.PasswordChar = '*';
+            this.txt_Box_Pass.Size = new System.Drawing.Size(318, 34);
+            this.txt_Box_Pass.TabIndex = 3;
+            this.txt_Box_Pass.TextChanged += new System.EventHandler(this.txt_Box_Pass_TextChanged);
+            // 
+            // txt_Box_User
+            // 
+            this.txt_Box_User.BackColor = System.Drawing.Color.White;
+            this.txt_Box_User.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Box_User.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Box_User.Location = new System.Drawing.Point(271, 153);
+            this.txt_Box_User.Name = "txt_Box_User";
+            this.txt_Box_User.Size = new System.Drawing.Size(318, 34);
+            this.txt_Box_User.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -123,58 +155,6 @@ namespace Telethon2021
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(126, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Utilisateur";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(114, 234);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Mot de pass";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(103, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Entrer";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(368, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -186,26 +166,39 @@ namespace Telethon2021
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
-            // Form1
+            // label_2021
             // 
+            this.label_2021.AutoSize = true;
+            this.label_2021.BackColor = System.Drawing.Color.Transparent;
+            this.label_2021.Font = new System.Drawing.Font("BolsterBold", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_2021.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_2021.Location = new System.Drawing.Point(19, 173);
+            this.label_2021.Name = "label_2021";
+            this.label_2021.Size = new System.Drawing.Size(164, 66);
+            this.label_2021.TabIndex = 11;
+            this.label_2021.Text = "2021";
+            // 
+            // Login
+            // 
+            this.AcceptButton = this.btn_Enter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CancelButton = this.btn_Annuler;
             this.ClientSize = new System.Drawing.Size(654, 451);
+            this.Controls.Add(this.label_2021);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_Box_Pass);
+            this.Controls.Add(this.txt_Box_User);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -224,14 +217,13 @@ namespace Telethon2021
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Box_Pass;
+        private System.Windows.Forms.TextBox txt_Box_User;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Annuler;
+        private System.Windows.Forms.Button btn_Enter;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label_2021;
     }
 }
 
