@@ -33,12 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,16 +59,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AfficherCommanditaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficherCommanditaire.Designer.cs">
+      <DependentUpon>AfficherCommanditaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AfficherDonateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficherDonateur.Designer.cs">
+      <DependentUpon>AfficherDonateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoDonateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoDonateurs.Designer.cs">
+      <DependentUpon>InfoDonateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationCommanditaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationCommanditaire.Designer.cs">
+      <DependentUpon>InformationCommanditaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationPrix.Designer.cs">
+      <DependentUpon>InformationPrix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModePaiement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModePaiement.Designer.cs">
+      <DependentUpon>ModePaiement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AfficherCommanditaire.resx">
+      <DependentUpon>AfficherCommanditaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AfficherDonateur.resx">
+      <DependentUpon>AfficherDonateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoDonateurs.resx">
+      <DependentUpon>InfoDonateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationCommanditaire.resx">
+      <DependentUpon>InformationCommanditaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPrix.resx">
+      <DependentUpon>InformationPrix.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModePaiement.resx">
+      <DependentUpon>ModePaiement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
