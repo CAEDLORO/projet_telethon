@@ -102,7 +102,7 @@ namespace Telethon2021V1
             // 
             // panel_blue
             // 
-            this.panel_blue.BackColor = System.Drawing.Color.Navy;
+            this.panel_blue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(130)))));
             this.panel_blue.Controls.Add(this.button1);
             this.panel_blue.Controls.Add(this.btn_entrer);
             this.panel_blue.Location = new System.Drawing.Point(12, 301);
