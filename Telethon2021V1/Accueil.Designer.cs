@@ -31,13 +31,6 @@ namespace Telethon2021V1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.pannel_comm_global = new System.Windows.Forms.Panel();
-            this.panel_03_comm = new System.Windows.Forms.Panel();
-            this.lb_titre_affichage_comm = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btn_annuler_comm = new System.Windows.Forms.Button();
-            this.btn_enregistrer_comm = new System.Windows.Forms.Button();
-            this.btn_suivant_comm = new System.Windows.Forms.Button();
             this.panel_02_comm = new System.Windows.Forms.Panel();
             this.listB_titre_prix = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -46,27 +39,38 @@ namespace Telethon2021V1
             this.lb_valeur_prix = new System.Windows.Forms.Label();
             this.lb_titre_quatitee = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_annuler_comm = new System.Windows.Forms.Button();
+            this.btn_enregistrer_comm = new System.Windows.Forms.Button();
+            this.btn_suivant_comm = new System.Windows.Forms.Button();
+            this.panel_03_comm = new System.Windows.Forms.Panel();
+            this.lb_titre_affichage_comm = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel_01_comm = new System.Windows.Forms.Panel();
             this.tb_nom_comm = new System.Windows.Forms.TextBox();
             this.tb_prenom_comm = new System.Windows.Forms.TextBox();
             this.lb_prenom_comm = new System.Windows.Forms.Label();
             this.lb_nom_comm = new System.Windows.Forms.Label();
             this.lb_titre_commanditaire = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.paneL_principal = new System.Windows.Forms.Panel();
+            this.BannerAccueil = new System.Windows.Forms.PictureBox();
             this.btn_annuler = new System.Windows.Forms.Button();
             this.btn_enregistyrer = new System.Windows.Forms.Button();
             this.btn_suivant = new System.Windows.Forms.Button();
             this.panel_donateur = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label_donateur = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.BannerAccueil = new System.Windows.Forms.PictureBox();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
             this.ImageTitre = new System.Windows.Forms.PictureBox();
@@ -76,35 +80,29 @@ namespace Telethon2021V1
             this.btn_commanditaire = new System.Windows.Forms.Button();
             this.btn_Donateur = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pannel_comm_global.SuspendLayout();
-            this.panel_03_comm.SuspendLayout();
             this.panel_02_comm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel_03_comm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel_01_comm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panelPrincipal.SuspendLayout();
             this.paneL_principal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BannerAccueil)).BeginInit();
             this.panel_donateur.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BannerAccueil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageTitre)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pannel_comm_global
             // 
-            //this.pannel_comm_global.Controls.Add(this.panel_01_comm);
-            //this.pannel_comm_global.Controls.Add(this.panel_02_comm);
-            this.pannel_comm_global.Controls.Add(this.panel_03_comm);
+            this.pannel_comm_global.Controls.Add(this.panel_02_comm);
             this.pannel_comm_global.Controls.Add(this.btn_annuler_comm);
             this.pannel_comm_global.Controls.Add(this.btn_enregistrer_comm);
             this.pannel_comm_global.Controls.Add(this.btn_suivant_comm);
@@ -112,87 +110,6 @@ namespace Telethon2021V1
             this.pannel_comm_global.Name = "pannel_comm_global";
             this.pannel_comm_global.Size = new System.Drawing.Size(903, 554);
             this.pannel_comm_global.TabIndex = 8;
-            // 
-            // panel_03_comm
-            // 
-            this.panel_03_comm.Controls.Add(this.lb_titre_affichage_comm);
-            this.panel_03_comm.Controls.Add(this.textBox5);
-            this.panel_03_comm.Controls.Add(this.label8);
-            this.panel_03_comm.Controls.Add(this.pictureBox6);
-            this.panel_03_comm.Location = new System.Drawing.Point(0, 0);
-            this.panel_03_comm.Name = "panel_03_comm";
-            this.panel_03_comm.Size = new System.Drawing.Size(903, 469);
-            this.panel_03_comm.TabIndex = 8;
-            // 
-            // lb_titre_affichage_comm
-            // 
-            this.lb_titre_affichage_comm.AutoSize = true;
-            this.lb_titre_affichage_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titre_affichage_comm.Location = new System.Drawing.Point(80, 153);
-            this.lb_titre_affichage_comm.Name = "lb_titre_affichage_comm";
-            this.lb_titre_affichage_comm.Size = new System.Drawing.Size(456, 23);
-            this.lb_titre_affichage_comm.TabIndex = 7;
-            this.lb_titre_affichage_comm.Text = "Affichage des informations du commanditaire";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(84, 193);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(713, 221);
-            this.textBox5.TabIndex = 5;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(264, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(401, 34);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Informations Commanditaire";
-            // 
-            // btn_annuler_comm
-            // 
-            this.btn_annuler_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_annuler_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_annuler_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_annuler_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_annuler_comm.Location = new System.Drawing.Point(580, 484);
-            this.btn_annuler_comm.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_annuler_comm.Name = "btn_annuler_comm";
-            this.btn_annuler_comm.Size = new System.Drawing.Size(200, 50);
-            this.btn_annuler_comm.TabIndex = 4;
-            this.btn_annuler_comm.Text = "Annuler";
-            this.btn_annuler_comm.UseVisualStyleBackColor = false;
-            // 
-            // btn_enregistrer_comm
-            // 
-            this.btn_enregistrer_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_enregistrer_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_enregistrer_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_enregistrer_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enregistrer_comm.Location = new System.Drawing.Point(344, 484);
-            this.btn_enregistrer_comm.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_enregistrer_comm.Name = "btn_enregistrer_comm";
-            this.btn_enregistrer_comm.Size = new System.Drawing.Size(200, 50);
-            this.btn_enregistrer_comm.TabIndex = 3;
-            this.btn_enregistrer_comm.Text = "Enregistrer";
-            this.btn_enregistrer_comm.UseVisualStyleBackColor = false;
-            // 
-            // btn_suivant_comm
-            // 
-            this.btn_suivant_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_suivant_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_suivant_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_suivant_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_suivant_comm.Location = new System.Drawing.Point(105, 484);
-            this.btn_suivant_comm.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_suivant_comm.Name = "btn_suivant_comm";
-            this.btn_suivant_comm.Size = new System.Drawing.Size(200, 50);
-            this.btn_suivant_comm.TabIndex = 4;
-            this.btn_suivant_comm.Text = "Suivant";
-            this.btn_suivant_comm.UseVisualStyleBackColor = false;
             // 
             // panel_02_comm
             // 
@@ -231,6 +148,7 @@ namespace Telethon2021V1
             "BBQ"});
             this.listBox1.Location = new System.Drawing.Point(413, 153);
             this.listBox1.Name = "listBox1";
+            this.listBox1.ScrollAlwaysVisible = true;
             this.listBox1.Size = new System.Drawing.Size(213, 20);
             this.listBox1.TabIndex = 6;
             // 
@@ -278,6 +196,107 @@ namespace Telethon2021V1
             this.label6.Size = new System.Drawing.Size(401, 34);
             this.label6.TabIndex = 1;
             this.label6.Text = "Informations Commanditaire";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Telethon2021V1.Properties.Resources.Ligne2;
+            this.pictureBox5.Location = new System.Drawing.Point(179, 78);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(539, 19);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btn_annuler_comm
+            // 
+            this.btn_annuler_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_annuler_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_annuler_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_annuler_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_annuler_comm.Location = new System.Drawing.Point(580, 484);
+            this.btn_annuler_comm.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_annuler_comm.Name = "btn_annuler_comm";
+            this.btn_annuler_comm.Size = new System.Drawing.Size(200, 50);
+            this.btn_annuler_comm.TabIndex = 4;
+            this.btn_annuler_comm.Text = "Annuler";
+            this.btn_annuler_comm.UseVisualStyleBackColor = false;
+            // 
+            // btn_enregistrer_comm
+            // 
+            this.btn_enregistrer_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_enregistrer_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_enregistrer_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_enregistrer_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer_comm.Location = new System.Drawing.Point(344, 484);
+            this.btn_enregistrer_comm.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_enregistrer_comm.Name = "btn_enregistrer_comm";
+            this.btn_enregistrer_comm.Size = new System.Drawing.Size(200, 50);
+            this.btn_enregistrer_comm.TabIndex = 3;
+            this.btn_enregistrer_comm.Text = "Enregistrer";
+            this.btn_enregistrer_comm.UseVisualStyleBackColor = false;
+            // 
+            // btn_suivant_comm
+            // 
+            this.btn_suivant_comm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_suivant_comm.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_suivant_comm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_suivant_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_suivant_comm.Location = new System.Drawing.Point(105, 484);
+            this.btn_suivant_comm.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_suivant_comm.Name = "btn_suivant_comm";
+            this.btn_suivant_comm.Size = new System.Drawing.Size(200, 50);
+            this.btn_suivant_comm.TabIndex = 4;
+            this.btn_suivant_comm.Text = "Suivant";
+            this.btn_suivant_comm.UseVisualStyleBackColor = false;
+            // 
+            // panel_03_comm
+            // 
+            this.panel_03_comm.Controls.Add(this.lb_titre_affichage_comm);
+            this.panel_03_comm.Controls.Add(this.textBox5);
+            this.panel_03_comm.Controls.Add(this.label8);
+            this.panel_03_comm.Controls.Add(this.pictureBox6);
+            this.panel_03_comm.Location = new System.Drawing.Point(0, 0);
+            this.panel_03_comm.Name = "panel_03_comm";
+            this.panel_03_comm.Size = new System.Drawing.Size(903, 469);
+            this.panel_03_comm.TabIndex = 8;
+            // 
+            // lb_titre_affichage_comm
+            // 
+            this.lb_titre_affichage_comm.AutoSize = true;
+            this.lb_titre_affichage_comm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titre_affichage_comm.Location = new System.Drawing.Point(80, 153);
+            this.lb_titre_affichage_comm.Name = "lb_titre_affichage_comm";
+            this.lb_titre_affichage_comm.Size = new System.Drawing.Size(456, 23);
+            this.lb_titre_affichage_comm.TabIndex = 7;
+            this.lb_titre_affichage_comm.Text = "Affichage des informations du commanditaire";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(84, 193);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(713, 221);
+            this.textBox5.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(264, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(401, 34);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Informations Commanditaire";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Telethon2021V1.Properties.Resources.Ligne3;
+            this.pictureBox6.Location = new System.Drawing.Point(179, 78);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(539, 19);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // panel_01_comm
             // 
@@ -336,6 +355,16 @@ namespace Telethon2021V1
             this.lb_titre_commanditaire.TabIndex = 1;
             this.lb_titre_commanditaire.Text = "Informations Commanditaire";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Telethon2021V1.Properties.Resources.Ligne1;
+            this.pictureBox4.Location = new System.Drawing.Point(179, 78);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(539, 19);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // panelPrincipal
             // 
             this.panelPrincipal.Controls.Add(this.paneL_principal);
@@ -356,6 +385,17 @@ namespace Telethon2021V1
             this.paneL_principal.Name = "paneL_principal";
             this.paneL_principal.Size = new System.Drawing.Size(903, 554);
             this.paneL_principal.TabIndex = 8;
+            // 
+            // BannerAccueil
+            // 
+            this.BannerAccueil.Image = ((System.Drawing.Image)(resources.GetObject("BannerAccueil.Image")));
+            this.BannerAccueil.Location = new System.Drawing.Point(12, 436);
+            this.BannerAccueil.Margin = new System.Windows.Forms.Padding(4);
+            this.BannerAccueil.Name = "BannerAccueil";
+            this.BannerAccueil.Size = new System.Drawing.Size(879, 107);
+            this.BannerAccueil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BannerAccueil.TabIndex = 7;
+            this.BannerAccueil.TabStop = false;
             // 
             // btn_annuler
             // 
@@ -426,6 +466,17 @@ namespace Telethon2021V1
             this.panel2.Size = new System.Drawing.Size(903, 469);
             this.panel2.TabIndex = 8;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(28, 69);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(848, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -459,6 +510,17 @@ namespace Telethon2021V1
             this.label3.TabIndex = 0;
             this.label3.Text = "Informations Donateur";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(28, 69);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(848, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -491,27 +553,6 @@ namespace Telethon2021V1
             this.label_donateur.Size = new System.Drawing.Size(382, 40);
             this.label_donateur.TabIndex = 0;
             this.label_donateur.Text = "Informations Donateur";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Telethon2021V1.Properties.Resources.Ligne3;
-            this.pictureBox6.Location = new System.Drawing.Point(179, 78);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(539, 19);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
-            // BannerAccueil
-            // 
-            this.BannerAccueil.Image = ((System.Drawing.Image)(resources.GetObject("BannerAccueil.Image")));
-            this.BannerAccueil.Location = new System.Drawing.Point(12, 436);
-            this.BannerAccueil.Margin = new System.Windows.Forms.Padding(4);
-            this.BannerAccueil.Name = "BannerAccueil";
-            this.BannerAccueil.Size = new System.Drawing.Size(879, 107);
-            this.BannerAccueil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BannerAccueil.TabIndex = 7;
-            this.BannerAccueil.TabStop = false;
             // 
             // TopPanel
             // 
@@ -639,48 +680,6 @@ namespace Telethon2021V1
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Telethon2021V1.Properties.Resources.Ligne2;
-            this.pictureBox5.Location = new System.Drawing.Point(179, 78);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(539, 19);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Telethon2021V1.Properties.Resources.Ligne1;
-            this.pictureBox4.Location = new System.Drawing.Point(179, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(539, 19);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(28, 69);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(848, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(28, 69);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(848, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -696,28 +695,28 @@ namespace Telethon2021V1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
             this.pannel_comm_global.ResumeLayout(false);
-            this.panel_03_comm.ResumeLayout(false);
-            this.panel_03_comm.PerformLayout();
             this.panel_02_comm.ResumeLayout(false);
             this.panel_02_comm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel_03_comm.ResumeLayout(false);
+            this.panel_03_comm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel_01_comm.ResumeLayout(false);
             this.panel_01_comm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panelPrincipal.ResumeLayout(false);
             this.paneL_principal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BannerAccueil)).EndInit();
             this.panel_donateur.ResumeLayout(false);
             this.panel_donateur.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BannerAccueil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImageTitre)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
