@@ -22,6 +22,35 @@ namespace Telethon2021V1
             this.Close();
         }
 
-        
+        private void btn_dons_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_donateurs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_commanditaires_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_prix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_afficher_listes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bn_affichage_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

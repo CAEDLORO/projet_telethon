@@ -4199,7 +4199,7 @@
         JCIiombMIhERETVjFomIiKiJLbP+D7eOYYZJskXEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="panel_gaucheBoutons.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAIAAAAxBA+LAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKNWlDQ1BzUkdCIElFQzYxOTY2LTIuMQAA
@@ -4381,7 +4381,7 @@
         UJoQAlCaEAJQmhACUNfv+XUhBKCwDGG8AKCoX//t/w8YCoMW/ijMagAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LogoAccueil.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAoAAAAJ7CAYAAABzmCD5AAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         3QV0HNf5NvAxNm0TSyuwpd0dnt2V7UCbxEkxaZr2+7cNp+GGOQ1z0iYNGuM4ZmY7ZmZmiJmZmVGWrMX3
