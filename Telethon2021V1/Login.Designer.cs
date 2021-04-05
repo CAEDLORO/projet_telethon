@@ -36,9 +36,9 @@ namespace Telethon2021V1
             this.txt_Utilisateur = new System.Windows.Forms.TextBox();
             this.txt_MotPass = new System.Windows.Forms.TextBox();
             this.panel_blue = new System.Windows.Forms.Panel();
-            this.BannerLogin = new System.Windows.Forms.PictureBox();
-            this.btn_entrer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_entrer = new System.Windows.Forms.Button();
+            this.BannerLogin = new System.Windows.Forms.PictureBox();
             this.titre_telethon = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,7 +102,7 @@ namespace Telethon2021V1
             // 
             // panel_blue
             // 
-            this.panel_blue.BackColor = System.Drawing.Color.Navy;
+            this.panel_blue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(130)))));
             this.panel_blue.Controls.Add(this.button1);
             this.panel_blue.Controls.Add(this.btn_entrer);
             this.panel_blue.Location = new System.Drawing.Point(12, 301);
@@ -110,15 +110,20 @@ namespace Telethon2021V1
             this.panel_blue.Size = new System.Drawing.Size(609, 69);
             this.panel_blue.TabIndex = 5;
             // 
-            // BannerLogin
+            // button1
             // 
-            this.BannerLogin.Image = ((System.Drawing.Image)(resources.GetObject("BannerLogin.Image")));
-            this.BannerLogin.Location = new System.Drawing.Point(12, 376);
-            this.BannerLogin.Name = "BannerLogin";
-            this.BannerLogin.Size = new System.Drawing.Size(609, 87);
-            this.BannerLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BannerLogin.TabIndex = 6;
-            this.BannerLogin.TabStop = false;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(341, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 43);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Annuler";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_entrer
             // 
@@ -135,19 +140,15 @@ namespace Telethon2021V1
             this.btn_entrer.UseVisualStyleBackColor = true;
             this.btn_entrer.Click += new System.EventHandler(this.btn_entrer_Click);
             // 
-            // button1
+            // BannerLogin
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(341, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BannerLogin.Image = ((System.Drawing.Image)(resources.GetObject("BannerLogin.Image")));
+            this.BannerLogin.Location = new System.Drawing.Point(12, 376);
+            this.BannerLogin.Name = "BannerLogin";
+            this.BannerLogin.Size = new System.Drawing.Size(609, 87);
+            this.BannerLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BannerLogin.TabIndex = 6;
+            this.BannerLogin.TabStop = false;
             // 
             // titre_telethon
             // 
@@ -187,6 +188,7 @@ namespace Telethon2021V1
             this.Controls.Add(this.Icon_User);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
