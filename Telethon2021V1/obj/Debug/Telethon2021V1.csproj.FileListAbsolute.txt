@@ -9,3 +9,14 @@ C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021V1\obj\Debug
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.exe
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.pdb
 C:\Users\Familia\Desktop\C#\TP Telethon\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.Accueil.resources
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\bin\Debug\Telethon2021V1.exe.config
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\bin\Debug\Telethon2021V1.exe
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\bin\Debug\Telethon2021V1.pdb
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.csprojAssemblyReference.cache
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.Accueil.resources
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.Login.resources
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.Properties.Resources.resources
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.csproj.GenerateResource.cache
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.csproj.CoreCompileInputs.cache
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.exe
+D:\Team_feu_hinde\projet_telethon\Telethon2021V1\obj\Debug\Telethon2021V1.pdb
