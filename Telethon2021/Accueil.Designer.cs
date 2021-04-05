@@ -46,6 +46,7 @@ namespace Telethon2021
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelFille = new System.Windows.Forms.Panel();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label_Titre = new System.Windows.Forms.Label();
             this.btn_Exit = new System.Windows.Forms.Button();
@@ -57,7 +58,6 @@ namespace Telethon2021
             this.label_3000000 = new System.Windows.Forms.Label();
             this.label_TotalDon = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panelCommanditaire.SuspendLayout();
             this.panelDonateur.SuspendLayout();
@@ -80,9 +80,9 @@ namespace Telethon2021
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 441);
+            this.panel1.Size = new System.Drawing.Size(253, 706);
             this.panel1.TabIndex = 0;
             // 
             // panelCommanditaire
@@ -92,9 +92,10 @@ namespace Telethon2021
             this.panelCommanditaire.Controls.Add(this.btnInfoPrix);
             this.panelCommanditaire.Controls.Add(this.btnInfoCommanditaire);
             this.panelCommanditaire.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCommanditaire.Location = new System.Drawing.Point(0, 371);
+            this.panelCommanditaire.Location = new System.Drawing.Point(0, 458);
+            this.panelCommanditaire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCommanditaire.Name = "panelCommanditaire";
-            this.panelCommanditaire.Size = new System.Drawing.Size(190, 92);
+            this.panelCommanditaire.Size = new System.Drawing.Size(253, 113);
             this.panelCommanditaire.TabIndex = 3;
             // 
             // btnAfficherCommanditaire
@@ -105,10 +106,11 @@ namespace Telethon2021
             this.btnAfficherCommanditaire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherCommanditaire.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherCommanditaire.ForeColor = System.Drawing.Color.MediumBlue;
-            this.btnAfficherCommanditaire.Location = new System.Drawing.Point(0, 60);
+            this.btnAfficherCommanditaire.Location = new System.Drawing.Point(0, 74);
+            this.btnAfficherCommanditaire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAfficherCommanditaire.Name = "btnAfficherCommanditaire";
-            this.btnAfficherCommanditaire.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAfficherCommanditaire.Size = new System.Drawing.Size(190, 30);
+            this.btnAfficherCommanditaire.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnAfficherCommanditaire.Size = new System.Drawing.Size(253, 37);
             this.btnAfficherCommanditaire.TabIndex = 3;
             this.btnAfficherCommanditaire.Text = "Afficher";
             this.btnAfficherCommanditaire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,10 +125,11 @@ namespace Telethon2021
             this.btnInfoPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfoPrix.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfoPrix.ForeColor = System.Drawing.Color.MediumBlue;
-            this.btnInfoPrix.Location = new System.Drawing.Point(0, 30);
+            this.btnInfoPrix.Location = new System.Drawing.Point(0, 37);
+            this.btnInfoPrix.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInfoPrix.Name = "btnInfoPrix";
-            this.btnInfoPrix.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInfoPrix.Size = new System.Drawing.Size(190, 30);
+            this.btnInfoPrix.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnInfoPrix.Size = new System.Drawing.Size(253, 37);
             this.btnInfoPrix.TabIndex = 2;
             this.btnInfoPrix.Text = "Informations Prix";
             this.btnInfoPrix.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,9 +145,10 @@ namespace Telethon2021
             this.btnInfoCommanditaire.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfoCommanditaire.ForeColor = System.Drawing.Color.MediumBlue;
             this.btnInfoCommanditaire.Location = new System.Drawing.Point(0, 0);
+            this.btnInfoCommanditaire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInfoCommanditaire.Name = "btnInfoCommanditaire";
-            this.btnInfoCommanditaire.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInfoCommanditaire.Size = new System.Drawing.Size(190, 30);
+            this.btnInfoCommanditaire.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnInfoCommanditaire.Size = new System.Drawing.Size(253, 37);
             this.btnInfoCommanditaire.TabIndex = 1;
             this.btnInfoCommanditaire.Text = "Informations";
             this.btnInfoCommanditaire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,10 +162,11 @@ namespace Telethon2021
             this.btnCommanditaire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCommanditaire.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCommanditaire.ForeColor = System.Drawing.Color.White;
-            this.btnCommanditaire.Location = new System.Drawing.Point(0, 334);
+            this.btnCommanditaire.Location = new System.Drawing.Point(0, 412);
+            this.btnCommanditaire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCommanditaire.Name = "btnCommanditaire";
-            this.btnCommanditaire.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnCommanditaire.Size = new System.Drawing.Size(190, 37);
+            this.btnCommanditaire.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnCommanditaire.Size = new System.Drawing.Size(253, 46);
             this.btnCommanditaire.TabIndex = 2;
             this.btnCommanditaire.Text = "Commanditaire";
             this.btnCommanditaire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,9 +180,10 @@ namespace Telethon2021
             this.panelDonateur.Controls.Add(this.btnModePaiement);
             this.panelDonateur.Controls.Add(this.InfoDonateur);
             this.panelDonateur.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDonateur.Location = new System.Drawing.Point(0, 244);
+            this.panelDonateur.Location = new System.Drawing.Point(0, 301);
+            this.panelDonateur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDonateur.Name = "panelDonateur";
-            this.panelDonateur.Size = new System.Drawing.Size(190, 90);
+            this.panelDonateur.Size = new System.Drawing.Size(253, 111);
             this.panelDonateur.TabIndex = 1;
             // 
             // btnAfficherDonateur
@@ -188,10 +194,11 @@ namespace Telethon2021
             this.btnAfficherDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherDonateur.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherDonateur.ForeColor = System.Drawing.Color.MediumBlue;
-            this.btnAfficherDonateur.Location = new System.Drawing.Point(0, 60);
+            this.btnAfficherDonateur.Location = new System.Drawing.Point(0, 74);
+            this.btnAfficherDonateur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAfficherDonateur.Name = "btnAfficherDonateur";
-            this.btnAfficherDonateur.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAfficherDonateur.Size = new System.Drawing.Size(190, 30);
+            this.btnAfficherDonateur.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnAfficherDonateur.Size = new System.Drawing.Size(253, 37);
             this.btnAfficherDonateur.TabIndex = 3;
             this.btnAfficherDonateur.Text = "Afficher";
             this.btnAfficherDonateur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,10 +213,11 @@ namespace Telethon2021
             this.btnModePaiement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModePaiement.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModePaiement.ForeColor = System.Drawing.Color.MediumBlue;
-            this.btnModePaiement.Location = new System.Drawing.Point(0, 30);
+            this.btnModePaiement.Location = new System.Drawing.Point(0, 37);
+            this.btnModePaiement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModePaiement.Name = "btnModePaiement";
-            this.btnModePaiement.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnModePaiement.Size = new System.Drawing.Size(190, 30);
+            this.btnModePaiement.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnModePaiement.Size = new System.Drawing.Size(253, 37);
             this.btnModePaiement.TabIndex = 2;
             this.btnModePaiement.Text = "Mode Paiement";
             this.btnModePaiement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,9 +233,10 @@ namespace Telethon2021
             this.InfoDonateur.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoDonateur.ForeColor = System.Drawing.Color.MediumBlue;
             this.InfoDonateur.Location = new System.Drawing.Point(0, 0);
+            this.InfoDonateur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InfoDonateur.Name = "InfoDonateur";
-            this.InfoDonateur.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.InfoDonateur.Size = new System.Drawing.Size(190, 30);
+            this.InfoDonateur.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.InfoDonateur.Size = new System.Drawing.Size(253, 37);
             this.InfoDonateur.TabIndex = 1;
             this.InfoDonateur.Text = "Informations";
             this.InfoDonateur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -241,10 +250,11 @@ namespace Telethon2021
             this.btn_Donateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Donateur.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Donateur.ForeColor = System.Drawing.Color.White;
-            this.btn_Donateur.Location = new System.Drawing.Point(0, 207);
+            this.btn_Donateur.Location = new System.Drawing.Point(0, 255);
+            this.btn_Donateur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Donateur.Name = "btn_Donateur";
-            this.btn_Donateur.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btn_Donateur.Size = new System.Drawing.Size(190, 37);
+            this.btn_Donateur.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btn_Donateur.Size = new System.Drawing.Size(253, 46);
             this.btn_Donateur.TabIndex = 1;
             this.btn_Donateur.Text = "Donateur";
             this.btn_Donateur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,10 +265,10 @@ namespace Telethon2021
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 158);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 195);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(190, 49);
+            this.panel3.Size = new System.Drawing.Size(253, 60);
             this.panel3.TabIndex = 1;
             // 
             // pictureBox1
@@ -266,10 +276,10 @@ namespace Telethon2021
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(253, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -279,9 +289,9 @@ namespace Telethon2021
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 25);
+            this.panel2.Size = new System.Drawing.Size(253, 31);
             this.panel2.TabIndex = 1;
             // 
             // panelFille
@@ -296,11 +306,24 @@ namespace Telethon2021
             this.panelFille.Controls.Add(this.label_NotreBut);
             this.panelFille.Controls.Add(this.label_3000000);
             this.panelFille.Controls.Add(this.label_TotalDon);
-            this.panelFille.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFille.Location = new System.Drawing.Point(190, 0);
+            this.panelFille.Location = new System.Drawing.Point(251, 0);
+            this.panelFille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFille.Name = "panelFille";
-            this.panelFille.Size = new System.Drawing.Size(448, 441);
+            this.panelFille.Size = new System.Drawing.Size(799, 706);
             this.panelFille.TabIndex = 1;
+            // 
+            // progressBar
+            // 
+            this.progressBar.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
+            this.progressBar.BackColor = System.Drawing.Color.DarkGray;
+            this.progressBar.Location = new System.Drawing.Point(126, 233);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(547, 28);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 13;
+            this.progressBar.Value = 20;
+            //this.progressBar.Click += new System.EventHandler(this.progressBar_Click);
             // 
             // panel4
             // 
@@ -311,8 +334,9 @@ namespace Telethon2021
             this.panel4.Controls.Add(this.btn_Exit);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(448, 91);
+            this.panel4.Size = new System.Drawing.Size(799, 112);
             this.panel4.TabIndex = 12;
             // 
             // label_Titre
@@ -321,9 +345,10 @@ namespace Telethon2021
             this.label_Titre.BackColor = System.Drawing.Color.Transparent;
             this.label_Titre.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Titre.ForeColor = System.Drawing.Color.White;
-            this.label_Titre.Location = new System.Drawing.Point(20, 29);
+            this.label_Titre.Location = new System.Drawing.Point(27, 36);
+            this.label_Titre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Titre.Name = "label_Titre";
-            this.label_Titre.Size = new System.Drawing.Size(406, 33);
+            this.label_Titre.Size = new System.Drawing.Size(508, 40);
             this.label_Titre.TabIndex = 9;
             this.label_Titre.Text = "PLATE-FORME ADMINISTRATIVE.";
             this.label_Titre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -332,11 +357,12 @@ namespace Telethon2021
             // 
             this.btn_Exit.BackColor = System.Drawing.Color.Navy;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Exit.Font = new System.Drawing.Font("ABeeZee", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(422, 3);
+            this.btn_Exit.Location = new System.Drawing.Point(764, 4);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(23, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(31, 28);
             this.btn_Exit.TabIndex = 11;
             this.btn_Exit.Text = "X";
             this.btn_Exit.UseVisualStyleBackColor = false;
@@ -347,9 +373,10 @@ namespace Telethon2021
             this.label_Date.AutoSize = true;
             this.label_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Date.ForeColor = System.Drawing.Color.Gray;
-            this.label_Date.Location = new System.Drawing.Point(62, 308);
+            this.label_Date.Location = new System.Drawing.Point(346, 510);
+            this.label_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Date.Name = "label_Date";
-            this.label_Date.Size = new System.Drawing.Size(72, 31);
+            this.label_Date.Size = new System.Drawing.Size(89, 39);
             this.label_Date.TabIndex = 8;
             this.label_Date.Text = "Date";
             // 
@@ -358,18 +385,20 @@ namespace Telethon2021
             this.label_Heure.AutoSize = true;
             this.label_Heure.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Heure.ForeColor = System.Drawing.Color.DarkRed;
-            this.label_Heure.Location = new System.Drawing.Point(52, 217);
+            this.label_Heure.Location = new System.Drawing.Point(229, 338);
+            this.label_Heure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Heure.Name = "label_Heure";
-            this.label_Heure.Size = new System.Drawing.Size(256, 91);
+            this.label_Heure.Size = new System.Drawing.Size(321, 113);
             this.label_Heure.TabIndex = 7;
             this.label_Heure.Text = "Heure";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(16, 367);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 597);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(410, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(799, 109);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -379,9 +408,10 @@ namespace Telethon2021
             this.label_30Millons.AutoSize = true;
             this.label_30Millons.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_30Millons.ForeColor = System.Drawing.Color.DarkRed;
-            this.label_30Millons.Location = new System.Drawing.Point(275, 126);
+            this.label_30Millons.Location = new System.Drawing.Point(472, 190);
+            this.label_30Millons.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_30Millons.Name = "label_30Millons";
-            this.label_30Millons.Size = new System.Drawing.Size(151, 30);
+            this.label_30Millons.Size = new System.Drawing.Size(194, 37);
             this.label_30Millons.TabIndex = 5;
             this.label_30Millons.Text = "30.000.000 $";
             // 
@@ -389,9 +419,10 @@ namespace Telethon2021
             // 
             this.label_NotreBut.AutoSize = true;
             this.label_NotreBut.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_NotreBut.Location = new System.Drawing.Point(276, 106);
+            this.label_NotreBut.Location = new System.Drawing.Point(473, 165);
+            this.label_NotreBut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_NotreBut.Name = "label_NotreBut";
-            this.label_NotreBut.Size = new System.Drawing.Size(98, 22);
+            this.label_NotreBut.Size = new System.Drawing.Size(124, 30);
             this.label_NotreBut.TabIndex = 4;
             this.label_NotreBut.Text = "Notre but";
             // 
@@ -400,9 +431,10 @@ namespace Telethon2021
             this.label_3000000.AutoSize = true;
             this.label_3000000.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_3000000.ForeColor = System.Drawing.Color.Navy;
-            this.label_3000000.Location = new System.Drawing.Point(11, 126);
+            this.label_3000000.Location = new System.Drawing.Point(120, 190);
+            this.label_3000000.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_3000000.Name = "label_3000000";
-            this.label_3000000.Size = new System.Drawing.Size(138, 30);
+            this.label_3000000.Size = new System.Drawing.Size(177, 37);
             this.label_3000000.TabIndex = 3;
             this.label_3000000.Text = "3.000.000 $";
             // 
@@ -410,9 +442,10 @@ namespace Telethon2021
             // 
             this.label_TotalDon.AutoSize = true;
             this.label_TotalDon.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TotalDon.Location = new System.Drawing.Point(12, 106);
+            this.label_TotalDon.Location = new System.Drawing.Point(121, 165);
+            this.label_TotalDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_TotalDon.Name = "label_TotalDon";
-            this.label_TotalDon.Size = new System.Drawing.Size(102, 22);
+            this.label_TotalDon.Size = new System.Drawing.Size(134, 30);
             this.label_TotalDon.TabIndex = 2;
             this.label_TotalDon.Text = "Total dons";
             // 
@@ -421,26 +454,15 @@ namespace Telethon2021
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // progressBar
-            // 
-            this.progressBar.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
-            this.progressBar.BackColor = System.Drawing.Color.DarkGray;
-            this.progressBar.Location = new System.Drawing.Point(16, 161);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(410, 23);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 13;
-            this.progressBar.Value = 20;
-            // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 441);
+            this.ClientSize = new System.Drawing.Size(1050, 706);
             this.Controls.Add(this.panelFille);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Accueil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
